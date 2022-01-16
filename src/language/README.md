@@ -1,4 +1,4 @@
-# Language Feature
+# Language Features
 
 | Feature                                         | Relevance |
 |-------------------------------------------------|-----------|
