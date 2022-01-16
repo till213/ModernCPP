@@ -1,6 +1,6 @@
 # Automatic Type Determination
 
-## What Is It?
+## About
 The type of variables is automatically determined.
 
 ## Since
