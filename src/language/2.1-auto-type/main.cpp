@@ -1,7 +1,8 @@
-#include <iostream>
 #include <vector>
 #include <map>
 #include <complex>
+#include <functional>
+#include <iostream>
 
 /*!
  * Since C++14 auto can also be used as a function return value.
@@ -46,7 +47,7 @@ int main(int argc, char *argv[])
     auto pi = 3.1415;
     std::cout << "Type of pi: " << typeid (pi).name() << std::endl;
 
-    std::string s("Anthony");
+    std::string s {"Anthony"};
     auto len = s.length();
     std::cout << "Type of len: " << typeid (len).name() << std::endl;
 
