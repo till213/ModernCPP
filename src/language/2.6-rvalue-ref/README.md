@@ -32,4 +32,4 @@ _lvalue_ reference the compiler chooses the proper implementation.
 C++11
 
 ## More
-(Rvalue references)[http://thbecker.net/articles/rvalue_references/section_01.html]
+[thbecker.net: Rvalue references](http://thbecker.net/articles/rvalue_references/section_01.html)
