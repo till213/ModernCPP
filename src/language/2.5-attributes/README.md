@@ -1,11 +1,9 @@
 # Attributes
 
 ## About
-
 Attributes allow to give the compiler additional hints.
 
 ## Why
-
 Attributes standardise some of the already existing compiler-specific
 attributes.
 
@@ -27,7 +25,6 @@ The following attributes are defined:
 | maybe_unused          | No warning if object is not being used                                  |
 
 ## How to use
-
 Attributes help to supress compiler warnings, document the code and make intentions of the programmer explicit.
 
 ## Since

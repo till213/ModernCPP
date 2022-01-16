@@ -1,13 +1,11 @@
 # Exception specification
 
 ## About
-
 The previous _throw_ specification has been deprecated and mostly replaced
 by the new _noexcept_ specification, which specifies that a function does
 not throw any exception.
 
 ## Why
-
 _Throw_ was used to declare which exceptions would be thrown by a given
 function. However compilers cannot verify this claim at compile time, which 
 in the end lead to less stable programs.
@@ -21,7 +19,6 @@ An extension also exists for templates where an argument indicates whether
 the specification holds true or not.
 
 ## How to use
-
 Using _noexcept_ both documents the intention of a function and allows
 the compiler to optimise code.
 
