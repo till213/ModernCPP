@@ -31,4 +31,4 @@ Attributes help to supress compiler warnings, document the code and make intenti
 ## Since
 C++11 (attributes in general)
 C++14 (deprecated)
-C++17 (fallthrough, nodiscard, maybe_unused, namespaces and enumerations
+C++17 (fallthrough, nodiscard, maybe_unused, namespaces and enumerations)
