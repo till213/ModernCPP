@@ -29,6 +29,7 @@ endif()
 
 # Example code
 add_subdirectory(${CMAKE_SOURCE_DIR}/src/language)
+add_subdirectory(${CMAKE_SOURCE_DIR}/src/templates)
 
 # Documentation
 add_subdirectory(${CMAKE_SOURCE_DIR}/doc)
