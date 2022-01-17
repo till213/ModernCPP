@@ -5,7 +5,7 @@ void throwException() {
 }
 
 /*! This function is deprecated with [[deprecated]]. */
-[[deprecated("Do not use anymore")]]
+[[deprecated("Example usage of the [[deprecated]] attribute")]]
 void foo()
 {}
 
