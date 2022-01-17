@@ -7,4 +7,7 @@
 | [Strongly-typed enumerations](./2.3-typed-enum) | ***       | 
 | [Exception specification](./2.4-exception-spec) | **        | 
 | [Attributes](./2.5-attributes)                  | **        | 
-| [Rvalue references](./2.6-rvalue-ref)           | **        | 
+| [Rvalue references](./2.6-rvalue-ref)           | **        |
+| [Explicit override](./2.7-explicit-override)    | **        | 
+| [Final override](./2.8-final-override)          | ***       | 
+| [Auto implementations](./2.9-auto-impl)         | **        | 
