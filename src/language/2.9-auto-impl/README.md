@@ -1,4 +1,4 @@
-# Delete and create auto implementations
+# Delete and restore automatic implementations
 
 ## About
 With the new keywords _delete_ and _default_ the (non-)creation of automatic implementations for
