@@ -47,6 +47,12 @@ Use _default_ to restore automatically generated functions when
 - the base class has explicitly _deleted_ them
 - the base class has implemented them
 
+---
+**NOTE**
+
+This does not seem to work, at least not on macOS (clang).
+---
+
 ### Scenario 4- Change specifiers
 Use _default_ to change specifiers. Generated functions are typically _public_, _inline_ and not _explicit_, which can be changed
 using _default_.
