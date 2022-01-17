@@ -35,7 +35,7 @@ protected:
 };
 ```
 
-### Scenario 3 - Restore implicitly removed functions
+### Scenario 2 - Restore implicitly removed functions
 Use _default_ to restore automatically generated functions when
 
 - the class defines a custom constructor (which prevents generation of all default constructors)
@@ -51,6 +51,7 @@ Use _default_ to restore automatically generated functions when
 **NOTE**
 
 This does not seem to work, at least not on macOS (clang).
+
 ---
 
 ### Scenario 4- Change specifiers
