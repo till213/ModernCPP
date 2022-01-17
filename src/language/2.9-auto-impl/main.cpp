@@ -65,6 +65,7 @@ class Base
 {
 public:
     Base() = delete;
+    Base &operator=(const Base&) = delete;
 };
 
 class Derived : public Base
@@ -75,6 +76,8 @@ public:
     // "explicitly defaulted default constructor is implicitly deleted"
     // Note: because base class 'Base' has a deleted default constructor
     Derived() = default;
+    // Same warning for the default assignment operator
+    Derived &operator=(const Derived&) = default;
 };
 
 /*!
