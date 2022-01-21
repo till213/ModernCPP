@@ -1,5 +1,4 @@
 file(GLOB sub-dir *)
-set(list_of_dirs "")
 foreach(dir ${sub-dir})
 if(IS_DIRECTORY ${curdir}/${dir})
   add_subdirectory(${dir})
