@@ -19,7 +19,7 @@ enum struct FillStyle: std::uint8_t;
  * The enumerations are strongly typed: no confusion possible
  * between \c lineStyle and \c fillStyle.
  */
-void drawCircle(LineStyle lineStyle, FillStyle fillStyle)
+void drawCircle([[maybe_unused]]LineStyle lineStyle, [[maybe_unused]]FillStyle fillStyle)
 {
     // Draw a nice circle
 }
@@ -52,7 +52,7 @@ AggregationFlags operator|(AggregationFlags a, AggregationFlags b)
     return static_cast<AggregationFlags>(static_cast<EnumType>(a) | static_cast<EnumType>(b));
 }
 
-int main(int argc, char *argv[])
+int main(int, char *[])
 {
     /*! Typed enumerations must be accessed with their fully qualified name */
     drawCircle(LineStyle::Solid, FillStyle::Hatched);

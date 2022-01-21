@@ -42,7 +42,7 @@ int Func(double, std::string, double) {
  * does not contribute much to the understanding of the code, such as
  * the (technical) type of an iterator itself.
  */
-int main(int argc, char *argv[])
+int main(int, char *[])
 {
     auto pi = 3.1415;
     std::cout << "Type of pi: " << typeid (pi).name() << std::endl;

@@ -96,7 +96,7 @@ Special::Special(Special &&) = default;
 Special::~Special() = default;
 Special::Special() = default;
 
-int main(int argc, char *argv[])
+int main(int, char *[])
 {
     NonCopyable n;
     // Compiler error: call to deleted constructor of 'NonCopyable'

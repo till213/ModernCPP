@@ -29,7 +29,7 @@ auto Brush::getColor() const -> Color
  * the post notation becomes very useful in combination with the decltype
  * statement and is used in combination with lambda functions.
  */
-int main(int argc, char *argv[])
+int main(int, char *[])
 {
     Brush brush;
     std::cout << "The colour is: " << static_cast<std::underlying_type<Brush::Color>::type>(brush.getColor()) << std::endl;

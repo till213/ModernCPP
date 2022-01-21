@@ -114,7 +114,7 @@ private:
     int size_;
 };
 
-int main(int argc, char *argv[])
+int main(int, char *[])
 {
     DataObject dataObject1(100, 10);
     // dataObject1 is a named instance (lvalue), so the lvalue ctor is called here

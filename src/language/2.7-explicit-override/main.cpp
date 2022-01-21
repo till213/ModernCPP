@@ -23,7 +23,7 @@ public:
     }
 };
 
-int main(int argc, char *argv[])
+int main(int, char *[])
 {
     std::unique_ptr<Base> b = std::make_unique<Base>();
     b->foo();

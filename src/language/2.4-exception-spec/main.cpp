@@ -32,7 +32,7 @@ int doBar(int arg) noexcept {
  * depending on the template type.
  */
 template<typename T>
-void doSomething(T a, T b) noexcept(std::is_trivial<T>::value)
+void doSomething([[maybe_unused]]T a, [[maybe_unused]]T b) noexcept(std::is_trivial<T>::value)
 {
     // Do something meaningful
 }
@@ -58,7 +58,7 @@ int doRetrieve(T a) noexcept(noexcept(a.retrieve()))
     return a.retrieve();
 }
 
-int main(int argc, char *argv[])
+int main(int, char *[])
 {
     // Returns true, as doBar is specified with noexcept
     bool isNoThrowInvocable = std::is_nothrow_invocable_v<decltype(doBar), int>;

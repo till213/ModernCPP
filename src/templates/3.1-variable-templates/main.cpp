@@ -31,7 +31,7 @@ std::string formatNumber(long long n) {
     return s;
 }
 
-int main(int argc, char *argv[])
+int main(int, char *[])
 {
     var<int> = 3;
     var<double> = 42.42;
