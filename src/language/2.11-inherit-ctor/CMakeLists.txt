@@ -1,4 +1,4 @@
-set(APP_NAME "24-exception-spec")
+set(APP_NAME "211-inherit-ctor")
 
 set(LIBRARY_DEPENDENCIES "")
 

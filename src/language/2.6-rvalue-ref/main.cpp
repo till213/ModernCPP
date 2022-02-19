@@ -5,46 +5,46 @@ class DataObject
 {
 public:
     DataObject()
-        : data_(nullptr),
-          size_(0)
+        : m_data(nullptr),
+          m_size(0)
     {}
 
     DataObject(int n, int v)
-        : data_(new int[n]),
-          size_(n)
+        : m_data(new int[n]),
+          m_size(n)
     {
-        std::fill(data_, data_ + size_, v);
+        std::fill(m_data, m_data + m_size, v);
     }
 
     DataObject(const DataObject &src)
     {
         std::cout << "Lvalue ctor called." << std::endl;
-        data_ = new int[src.size_];
+        m_data = new int[src.m_size];
         // Expensive copy operation
-        std::copy(src.data_, src.data_ + src.size_, data_);
-        size_ = src.size_;
+        std::copy(src.m_data, src.m_data + src.m_size, m_data);
+        m_size = src.m_size;
     }
 
     DataObject(DataObject &&src)
         : // Data (ownership) is moved
-          data_(src.data_),
-          size_(src.size_)
+          m_data(src.m_data),
+          m_size(src.m_size)
     {
         std::cout << "Rvalue ctor called." << std::endl;
         // This operation destroys the source, but this is okay, as src
         // is an rvalue
-        src.data_ = nullptr;
-        src.size_ = 0;
+        src.m_data = nullptr;
+        src.m_size = 0;
     }
 
     virtual ~DataObject()
     {
-        delete[] data_;
+        delete[] m_data;
     }
 
     int getSize() const
     {
-        return size_;
+        return m_size;
     }
 
     /*!
@@ -55,8 +55,8 @@ public:
     int *getData() const&
     {
         std::cout << "Lvalue getData method called." << std::endl;
-        int *result(new int[size_]);
-        std::copy(data_, data_ + size_, result);
+        int *result(new int[m_size]);
+        std::copy(m_data, m_data + m_size, result);
         return result;
     }
 
@@ -67,9 +67,9 @@ public:
     int *getData() &&
     {
         std::cout << "Rvalue getData method called." << std::endl;
-        int *result = data_;
-        data_ = nullptr;
-        size_ = 0;
+        int *result = m_data;
+        m_data = nullptr;
+        m_size = 0;
         return result;
     }
 
@@ -82,12 +82,12 @@ public:
     {
         std::cout << "Lvalue assignment operator called." << std::endl;
 
-        size_ = 0;
-        delete[] data_;
-        data_ = new int[src.size_];
+        m_size = 0;
+        delete[] m_data;
+        m_data = new int[src.m_size];
         // Expensive copy operation
-        std::copy(src.data_, src.data_ + src.size_, data_);
-        size_ = src.size_;
+        std::copy(src.m_data, src.m_data + src.m_size, m_data);
+        m_size = src.m_size;
     }
 
     /*!
@@ -99,19 +99,19 @@ public:
     {
         std::cout << "Rvalue assignment operator called." << std::endl;
 
-        delete[] data_;
+        delete[] m_data;
         // Data (ownership) is moved
-        data_ = src.data_;
-        size_ = src.size_;
+        m_data = src.m_data;
+        m_size = src.m_size;
         // This operation destroys the source, but this is okay, as src
         // is an rvalue
-        src.size_ = 0;
-        src.data_ = nullptr;
+        src.m_size = 0;
+        src.m_data = nullptr;
     }
 
 private:
-    int *data_;
-    int size_;
+    int *m_data;
+    int m_size;
 };
 
 int main(int, char *[])

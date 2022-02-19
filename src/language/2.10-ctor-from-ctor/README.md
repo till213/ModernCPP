@@ -1,4 +1,4 @@
-# Call constructor from constructor
+# Call Constructor From Constructor
 
 ## About
 A constructor may delegate part of the class initialisation to another constructor, by simply

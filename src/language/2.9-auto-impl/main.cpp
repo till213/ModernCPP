@@ -30,12 +30,12 @@ class NonCopyable
 {
 public:
     NonCopyable()
-        : s_(std::make_unique<std::string>())
+        : m_s(std::make_unique<std::string>())
     {}
 
     NonCopyable(const NonCopyable &) = delete;
 protected:
-    std::unique_ptr<std::string> s_;
+    std::unique_ptr<std::string> m_s;
 };
 
 /*!
@@ -45,7 +45,7 @@ class Bar
 {
 public:
     Bar()
-        : s_(std::make_unique<std::string>())
+        : m_s(std::make_unique<std::string>())
     {}
 
     /*!
@@ -54,7 +54,7 @@ public:
     Bar(Bar &&) = default;
 
 private:
-    std::unique_ptr<std::string> s_;
+    std::unique_ptr<std::string> m_s;
 };
 
 /*!

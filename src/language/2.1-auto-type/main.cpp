@@ -15,14 +15,14 @@ auto calculate(double a, int b, float c)
 class Foo {
 public:
     const std::string &getName() const {
-        return _name;
+        return m_name;
     }
     const std::string *getDescription() const {
-        return &_desc;
+        return &m_desc;
     }
 private:
-    std::string _name {"Mickey Mouse"};
-    std::string _desc {"A funny mouse"};
+    std::string m_name {"Mickey Mouse"};
+    std::string m_desc {"A funny mouse"};
 };
 
 int Func(double, std::string, double) {

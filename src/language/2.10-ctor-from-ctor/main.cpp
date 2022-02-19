@@ -5,7 +5,7 @@ class Base
 {
 public:
     Base(int a, int b, int c)
-        : a_(a), b_(b), c_(c), d_(1001)
+        : m_a(a), m_b(b), m_c(c), m_d(1001)
     {}
 
     /*!
@@ -35,10 +35,10 @@ protected:
     }
 
 private:
-    int a_;
-    int b_;
-    int c_;
-    int d_;
+    int m_a;
+    int m_b;
+    int m_c;
+    int m_d;
 };
 
 class Derived : public Base

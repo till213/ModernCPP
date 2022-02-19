@@ -5,7 +5,7 @@ public:
     enum struct Color {red, green, blue};
     Color getColor() const;
 private:
-    Color _color {Color::red};
+    Color m_color {Color::red};
 };
 
 // So far we had to write the implemenation as
@@ -17,7 +17,7 @@ private:
 // But with post notation we can now write
 auto Brush::getColor() const -> Color
 {
-    return _color;
+    return m_color;
 }
 
 /*!
