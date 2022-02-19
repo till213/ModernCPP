@@ -35,13 +35,9 @@ protected:
     }
 
 private:
-    [[maybe_unused]]
     int a_;
-    [[maybe_unused]]
     int b_;
-    [[maybe_unused]]
     int c_;
-    [[maybe_unused]]
     int d_;
 };
 
