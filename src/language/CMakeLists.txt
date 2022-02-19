@@ -1,5 +1,6 @@
 file(GLOB sub-dir *)
 message(STATUS "Adding language example subdirectories...")
+file(GLOB sub-dir *)
 foreach(dir ${sub-dir})
   if(IS_DIRECTORY ${dir})
     add_subdirectory(${dir})
