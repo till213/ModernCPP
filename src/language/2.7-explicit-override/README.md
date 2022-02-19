@@ -1,4 +1,4 @@
-# Explicit override
+# Explicit Override
 
 ## About
 When overriding a method it is now possible to explicitly mark the new method as override.

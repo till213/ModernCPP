@@ -8,6 +8,7 @@ class Derived : public Base
 {
     using Base::Base  
 };
+```
 
 the Derived class inherits all constructors as defined in the Base class.
 

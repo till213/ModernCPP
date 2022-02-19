@@ -1,4 +1,4 @@
-# Exception specification
+# Exception Specification
 
 ## About
 The previous _throw_ specification has been deprecated and mostly replaced

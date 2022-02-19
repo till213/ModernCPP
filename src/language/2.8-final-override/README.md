@@ -1,4 +1,4 @@
-# Prevent override (final methods)
+# Prevent Override (Final Methods)
 
 ## About
 A final class cannot be derived from. A final method cannot be overridden.

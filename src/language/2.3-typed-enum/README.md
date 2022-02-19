@@ -1,4 +1,4 @@
-# Strongly-typed (scoped) enumerations
+# Strongly-Typed (Scoped) Enumerations
 
 ## About
 Enumerations with keyword struct (or class) are strongly typed, need to
