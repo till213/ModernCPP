@@ -20,7 +20,7 @@ make
 The easiest method for me is to simply install Qt + Qt Creator ([download](https://www.qt.io/download)) which comes with all required compilers (MinGW + gcc) and tools (cmake + ninja). Next:
 
 * Open Qt Creator
-* "File/Open file or project...", select the CMakeLists.txt (in the top-level project directory)
+* "File/Open file or project...", select the _CMakeLists.txt_ (in the top-level project directory)
 * Hit CTRL + B ("build")
 
 Note that compiling with Qt Creator is pure convencience, as the example code has no dependency on Qt whatsoever. In fact, any other environment which provides cmake (make is optional) and a C++17 compiler on Windows will do.
