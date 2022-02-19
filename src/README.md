@@ -4,4 +4,4 @@
 [Example code](./language/README.md)
 
 ## Templates
-[Example code](./template/README.md)
+[Example code](./templates/README.md)
