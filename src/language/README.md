@@ -13,3 +13,5 @@
 | [Auto implementations](./2.9-auto-impl)                    | **        |
 | [Call constructor from constructor](./2.10-ctor-from-ctor) | **        | 
 | [Inherit constructors](./2.11-inherit-ctor)                | **        | 
+
+[Return to overview](../README.md)
