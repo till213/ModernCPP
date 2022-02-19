@@ -15,6 +15,16 @@ make
 * The binaries will be in the _build/bin_ subdirectory
 * The provided Makefile will simply trigger the build by invoking cmake in the created _build_ subdirectory
 
+## Windows
+
+The easiest method for me is to simply install Qt + Qt Creator ([download](https://www.qt.io/download)) which comes with all required compilers (MinGW + gcc) and tools (cmake + ninja). Next:
+
+* Open Qt Creator
+* "File/Open file or project...", select the CMakeLists.txt
+* Hit CTRL + B ("build")
+
+Note that compiling with Qt Creator is pure convencience, as the example code has no dependency on Qt whatsoever. In fact, any other environment which provides cmake (make is optional) and a C++17 compiler on Windows will do.
+
 ## Compiler Warnings
 
 Note that certain compiler warnings are deliberate, specifically those which illustrate the use
