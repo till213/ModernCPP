@@ -1,7 +1,7 @@
 # C++17 Features
 
 ## Language Features
-[Example code](./language/README.MD)
+[Example code](./language/README.md)
 
 ## Templates
-[Example code](./template/README.MD)
+[Example code](./template/README.md)
