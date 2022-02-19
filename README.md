@@ -16,7 +16,3 @@ The simple compilation steps are described in the [BUILD.md](./BUILD.md) file.
 
 ## References
 [1] "C++17. Praxiswissen zum neuen Standard. Von C++11 bis 17", Peter Pohmann, entwickler.press, ISBN 978-3-86802-174-5
-
-
-
-
