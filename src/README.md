@@ -1,8 +1,5 @@
 # C++17 Features
 The features are organised into the following topics:
 
-## Language Features
-[Example code](./language/README.md)
-
-## Templates
-[Example code](./templates/README.md)
+- [Language Features](./language/README.md)
+- [Templates](./templates/README.md)
